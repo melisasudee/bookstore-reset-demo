@@ -163,7 +163,7 @@ Bu senaryo, sistemin veri bozulmasına karşı dayanıklılığını göstermekt
 ##  Kurulum ve Çalıştırma
 
 ```bash
-git clone <repo-link>
+git clone https://github.com/melisasudee/bookstore-reset-demo.git
 cd proje
 python -m venv venv
 venv\Scripts\activate
