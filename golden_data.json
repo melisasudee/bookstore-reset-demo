@@ -1,0 +1,68 @@
+[
+  {
+    "model": "store.book",
+    "pk": 1,
+    "fields": {
+      "title": "1984",
+      "author": "George Orwell",
+      "price": "54.90",
+      "stock": 12,
+      "image_url": "https://covers.openlibrary.org/b/id/7222246-L.jpg"
+    }
+  },
+  {
+    "model": "store.book",
+    "pk": 2,
+    "fields": {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "price": "69.90",
+      "stock": 7,
+      "image_url": "https://covers.openlibrary.org/b/id/6979861-L.jpg"
+    }
+  },
+  {
+    "model": "store.book",
+    "pk": 3,
+    "fields": {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "price": "49.50",
+      "stock": 14,
+      "image_url": "https://covers.openlibrary.org/b/id/8226191-L.jpg"
+    }
+  },
+  {
+    "model": "store.book",
+    "pk": 4,
+    "fields": {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "price": "59.90",
+      "stock": 10,
+      "image_url": "https://covers.openlibrary.org/b/id/8224171-L.jpg"
+    }
+  },
+  {
+    "model": "store.book",
+    "pk": 5,
+    "fields": {
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "price": "79.90",
+      "stock": 6,
+      "image_url": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+    }
+  },
+  {
+    "model": "store.book",
+    "pk": 6,
+    "fields": {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "price": "44.90",
+      "stock": 9,
+      "image_url": "https://covers.openlibrary.org/b/id/8231996-L.jpg"
+    }
+  }
+]

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Reset Demo</title>
+    <style>
+        body { font-family: Arial; margin: 40px; background: #f4f4f4; }
+        .box { background: white; padding: 25px; border-radius: 10px; max-width: 500px; }
+        input { display: block; margin: 12px 0; padding: 10px; width: 100%; }
+        button, a { padding: 10px 14px; background: #222; color: white; border: 0; text-decoration: none; border-radius: 6px; }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Güvenli Reset</h1>
+
+    {% for message in messages %}
+        <p><strong>{{ message }}</strong></p>
+    {% endfor %}
+
+    <p>Bu işlem mevcut verileri <strong>backup.json</strong> dosyasına yedekler, veritabanını temizler ve golden veri setini yükler.</p>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <label>Reset Şifresi:</label>
+        <input type="password" name="password" placeholder="reset123">
+
+        <label>
+            <input type="checkbox" name="confirm" value="yes" style="width:auto; display:inline;">
+            Eminim, sistemi resetle.
+        </label>
+
+        <br><br>
+
+        <button type="submit">Resetle</button>
+        <a href="{% url 'dashboard' %}">Vazgeç</a>
+    </form>
+</div>
+
+</body>
+</html>

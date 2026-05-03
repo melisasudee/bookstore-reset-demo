@@ -1,0 +1,26 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}Kitabevi Yönetim Paneli | {{ site_title }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Kitabevi Yönetim Paneli</a></h1>
+{% endblock %}
+
+{% block nav-global %}
+<div class="admin-global-nav">
+    <a class="nav-link" href="/">Siteyi Görüntüle</a>
+    <a class="nav-link" href="{% url 'admin:password_change' %}">Şifre Değiştir</a>
+    <a class="nav-link" href="{% url 'admin:logout' %}">Çıkış Yap</a>
+</div>
+{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+<style>
+    .admin-global-nav { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+    .admin-global-nav .nav-link { color: white; background: #0d6efd; padding: 8px 14px; border-radius: 999px; text-decoration: none; font-size: 0.92rem; }
+    .module caption, .inline-group caption { color: #334155; }
+    .app-listing .model a { font-weight: 600; }
+</style>
+{% endblock %}
